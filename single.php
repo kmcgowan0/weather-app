@@ -6,6 +6,7 @@ include_once('includes/header.php');
             <div class="col-xs-12">
                 <form class="form" id="search">
                     <p>Search for a location below</p>
+                    <p>Search for a town, country, city, or state</p>
                     <input id="location-search" type="search" name="city" placeholder="type a location">
                     <input type="submit" value="Search">
                 </form>

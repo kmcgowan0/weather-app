@@ -6,6 +6,7 @@ include_once('includes/header.php');
             <div class="col-xs-12">
                 <form class="form" id="compare">
                     <p>Compare weather in two different locations</p>
+                    <p>Search for a town, country, city, or state</p>
                     <input id="location-compare-1" type="text" name="location-1" placeholder="location one">
                     <input id="location-compare-2" type="text" name="location-2" placeholder="location two">
                     <input type="submit" value="Compare">

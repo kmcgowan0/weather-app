@@ -14,6 +14,8 @@ $(document).ready(function () {
                 var json = JSON.parse(rawJson);
                 $('#temperature').html(Math.round(json.main.temp));
                 $('#location').html(json.name);
+                $('#high-temp').html(json.main.temp_max);
+                $('#low-temp').html(json.main.temp_min);
                 console.log(json);
             });
         }, 2000);

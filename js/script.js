@@ -16,7 +16,7 @@ $(document).ready(function () {
             $('#forecast').html(json.weather[0].description);
 
         })
-            //show weather on success
+        //show weather on success
             .done(function () {
                 $('.error').css({"display": "none"});
                 $('.weather').css({"display": "block"});

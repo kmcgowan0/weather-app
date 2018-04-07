@@ -1,10 +1,33 @@
+
+
+body {
+    font-family: sans-serif;
+    text-align: center;
+}
+
+a.button {
+    text-decoration: none;
+    background-color: #23527c;
+    color: #fff;
+    padding: 1em;
+    margin: 2em;
+}
+a.button:hover {
+    text-decoration: none;
+    background-color: #3d89cc;
+    color: #fff;
+}
+.button-container {
+    margin-top:4em;
+}
 .weather {
     display:none;
-    font-family: sans-serif;
 }
 
 .weather-output {
-    font-family: sans-serif;
-    text-align: center;
     text-transform: capitalize;
 }
+.error{
+    display: none;
+}
+

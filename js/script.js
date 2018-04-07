@@ -31,18 +31,20 @@ return false;
             var json = JSON.parse(rawJson);
             $('#temperature1').html(Math.round(json.main.temp));
             $('#location1').html(json.name);
+            $('#high-temp1').html(json.main.temp_max);
+            $('#low-temp1').html(json.main.temp_min);
             $('#forecast1').html(json.weather[0].description);
-            $('.weather').css({"display":"block"});
+            $('.weather').css({"display": "block"});
         });
         $.getJSON("http://api.openweathermap.org/data/2.5/weather?q=" + location2 + "&units=metric&APPID=" + appid, function (data) {
             var rawJson = JSON.stringify(data);
             var json = JSON.parse(rawJson);
             $('#temperature2').html(Math.round(json.main.temp));
             $('#location2').html(json.name);
+            $('#high-temp2').html(json.main.temp_max);
+            $('#low-temp2').html(json.main.temp_min);
             $('#forecast2').html(json.weather[0].description);
         });
-        console.log(location1);
-        console.log(location2);
         return false;
     });
 

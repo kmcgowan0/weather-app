@@ -21,6 +21,7 @@ include_once('includes/header.php');
                     </div>
                 </div>
             </div>
+            <p class="error">Sorry, that location could not be found, please check your spelling and try searching again.</p>
             <div class="col-xs-12 button-container">
                 <a class="button" href="compare.php">Compare weather in two locations</a>
             </div>

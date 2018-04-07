@@ -27,11 +27,11 @@ include_once('includes/header.php');
                 <p class="weather">High: <span id="high-temp2"></span>°C</p>
                 <p class="weather">Low: <span id="low-temp2"></span>°C</p>
             </div>
+            <p class="error">Sorry, one of those locations could not be found, please check your spelling and try searching again.</p>
+        </div>
         <div class="col-xs-12 button-container">
             <a class="button" href="single.php">Search weather in one location</a>
         </div>
-
-        <a href="single.php">Search Weather</a>
     </div>
 
 <?php

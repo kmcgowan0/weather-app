@@ -9,3 +9,6 @@
 <p id="temperature"></p>
 
 <input id="location-search" type="search" name="city" placeholder="search for your weather">
+
+
+<a href="compare.php">Compare Weather</a>

@@ -21,3 +21,5 @@
     <p id="location2"></p>
     <p id="temperature2"></p>
 </div>
+
+<a href="single.php">Search Weather</a>

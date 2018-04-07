@@ -4,7 +4,7 @@ $(document).ready(function () {
     //single weather search
     $('#search').submit(function () {
         var location = $('#search #location-search').val();
-//ajax request
+        //ajax request
         $.getJSON("http://api.openweathermap.org/data/2.5/weather?q=" + location + "&units=metric&APPID=" + appid, function (data) {
             var rawJson = JSON.stringify(data);
             var json = JSON.parse(rawJson);
@@ -14,8 +14,8 @@ $(document).ready(function () {
             $('#high-temp').html(json.main.temp_max);
             $('#low-temp').html(json.main.temp_min);
             $('#forecast').html(json.weather[0].description);
-
         })
+
         //show weather on success
             .done(function () {
                 $('.error').css({"display": "none"});
@@ -26,6 +26,7 @@ $(document).ready(function () {
                 $('.error').css({"display": "block"});
                 $('.weather').css({"display": "none"});
             });
+
         //don't refresh the page on form submit
         return false;
     });
@@ -34,6 +35,7 @@ $(document).ready(function () {
     $("#compare").submit(function () {
         var location1 = $('#compare #location-compare-1').val();
         var location2 = $('#compare #location-compare-2').val();
+        //location 1 search
         $.getJSON("http://api.openweathermap.org/data/2.5/weather?q=" + location1 + "&units=metric&APPID=" + appid, function (data) {
             var rawJson = JSON.stringify(data);
             var json = JSON.parse(rawJson);
@@ -51,7 +53,8 @@ $(document).ready(function () {
                 $('.error1').css({"display": "block"});
                 $('.weather1').css({"display": "none"});
             });
-        // .always(function() { alert("complete"); });
+
+        //location 2 search
         $.getJSON("http://api.openweathermap.org/data/2.5/weather?q=" + location2 + "&units=metric&APPID=" + appid, function (data) {
             var rawJson = JSON.stringify(data);
             var json = JSON.parse(rawJson);

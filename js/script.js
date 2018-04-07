@@ -1,11 +1,5 @@
 $(document).ready(function () {
 
-    function updateWeather(json) {
-
-        longitude = json.coord.lon;
-        latitude = json.coord.lat;
-    }
-
     var latitude = 54.321475;
     var longitude = -6.306556;
     var appid = '86afc7330041b7b874026b441fdf564e';
@@ -26,7 +20,7 @@ $(document).ready(function () {
 
     });
 
-    $( "#compare" ).submit(function() {
+    $("#compare").submit(function () {
         var location1 = $('#compare #location-compare-1').val();
         var location2 = $('#compare #location-compare-2').val();
         $.getJSON("http://api.openweathermap.org/data/2.5/weather?q=" + location1 + "&units=metric&APPID=" + appid, function (data) {
@@ -49,8 +43,4 @@ $(document).ready(function () {
     });
 
 
-
 });
-
-function search(location){
-}

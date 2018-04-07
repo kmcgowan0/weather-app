@@ -1,8 +1,6 @@
 <?php
+include_once('includes/header.php');
 ?>
-<script src="js/jquery.js"></script>
-<script src="js/script.js"></script>
-<p>weatherboy</p>
 
 
 <form class="form" id="compare">
@@ -23,3 +21,7 @@
 </div>
 
 <a href="single.php">Search Weather</a>
+
+<?php
+include_once('includes/footer.php');
+?>
